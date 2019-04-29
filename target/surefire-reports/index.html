@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-misTests.Tests">
+              <span class="suite-name border-passed">misTests.Tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-misTests.Tests">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-misTests.Tests">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-misTests.Tests">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-misTests.Tests">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-misTests.Tests">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-misTests.Tests">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-misTests.Tests">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-misTests.Tests" class="hide-methods passed suite-misTests.Tests"> (hide)</a> <!-- hide-methods passed suite-misTests.Tests -->
+                      <a href="#" panel-name="suite-misTests.Tests" class="show-methods passed suite-misTests.Tests"> (show)</a> <!-- show-methods passed suite-misTests.Tests -->
+                    </span>
+                    <div class="method-list-content passed suite-misTests.Tests">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-misTests.Tests" title="misTests.Tests" hash-for-method="saludarPersona">saludarPersona</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-misTests.Tests" title="misTests.Tests" hash-for-method="testDeNoNulo">testDeNoNulo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-misTests.Tests" title="misTests.Tests" hash-for-method="testDeNulo">testDeNulo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-misTests.Tests" title="misTests.Tests" hash-for-method="testNumeroFalso">testNumeroFalso</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-misTests.Tests" title="misTests.Tests" hash-for-method="testNumeroVerdadero">testNumeroVerdadero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-misTests.Tests" title="misTests.Tests" hash-for-method="testNumerosIguales">testNumerosIguales</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-misTests.Tests" title="misTests.Tests" hash-for-method="testNumerosNoIguales">testNumerosNoIguales</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-misTests.Tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-misTests.Tests" class="panel misTests.Tests">
+          <div class="suite-misTests.Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">misTests.Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="saludarPersona">
+                  </a> <!-- saludarPersona -->
+                  <span class="method-name">saludarPersona</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeNoNulo">
+                  </a> <!-- testDeNoNulo -->
+                  <span class="method-name">testDeNoNulo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeNulo">
+                  </a> <!-- testDeNulo -->
+                  <span class="method-name">testDeNulo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNumeroFalso">
+                  </a> <!-- testNumeroFalso -->
+                  <span class="method-name">testNumeroFalso</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNumeroVerdadero">
+                  </a> <!-- testNumeroVerdadero -->
+                  <span class="method-name">testNumeroVerdadero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNumerosIguales">
+                  </a> <!-- testNumerosIguales -->
+                  <span class="method-name">testNumerosIguales</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNumerosNoIguales">
+                  </a> <!-- testNumerosNoIguales -->
+                  <span class="method-name">testNumerosNoIguales</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-misTests.Tests-class-passed -->
+        </div> <!-- panel misTests.Tests -->
+        <div panel-name="test-xml-misTests.Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;misTests.Tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;misTests.Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- misTests.Tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-misTests.Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for misTests.Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-misTests.Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for misTests.Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-misTests.Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for misTests.Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_misTests.Tests');
+function tableData_misTests.Tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'saludarPersona')
+data.setCell(0, 2, 'misTests.Tests')
+data.setCell(0, 3, 9);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testDeNoNulo')
+data.setCell(1, 2, 'misTests.Tests')
+data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testNumerosNoIguales')
+data.setCell(2, 2, 'misTests.Tests')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testNumerosIguales')
+data.setCell(3, 2, 'misTests.Tests')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testNumeroFalso')
+data.setCell(4, 2, 'misTests.Tests')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testDeNulo')
+data.setCell(5, 2, 'misTests.Tests')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testNumeroVerdadero')
+data.setCell(6, 2, 'misTests.Tests')
+data.setCell(6, 3, 0);
+window.suiteTableData['misTests.Tests']= { tableData: data, tableDiv: 'times-div-misTests.Tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 15 ms</span>
+              <div id="times-div-misTests.Tests">
+              </div> <!-- times-div-misTests.Tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-misTests.Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for misTests.Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-misTests.Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-misTests.Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">misTests.Tests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">saludarPersona</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeNoNulo</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeNulo</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNumeroFalso</span>
+                <span class="method-start">18 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNumeroVerdadero</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNumerosIguales</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNumerosNoIguales</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
